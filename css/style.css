@@ -38,11 +38,71 @@ button{background-color: #68e1fd;width: 140px; height: 50px; margin-top: 2rem;te
 .service div{width: 50%; margin: auto; }
 .divservice1 {padding-bottom: 3rem;}
 .divservice1 h1, .divservice1 p{ text-align: center;}
-.divservice2 {background-color: white; height: 20rem;padding-top: 5rem; margin-top:2rem;} 
+.divservice2 {background-color: white; height: 20rem;padding-top: 5rem; padding-bottom:1rem;} 
 .divservice2 ul {display: inline-block; vertical-align: top; width: 40%;padding-left: 8rem;}
 .divservice2 li{font-weight: bold; line-height:2rem; list-style-image: url(../assets/svg/check-mark.svg);}
 .divservice2 img{width: 35%;}
-footer p{padding-left: 2rem; width: 40%; display: inline-block;}
+
+footer p{padding-left: 2rem; width: 50%; display: inline-block;}
 footer{position: relative;}
 footer div{width: 120px; position:absolute; right: 2rem; bottom:1rem; text-align: right;}
 i{padding-right: 1rem;}
+
+@media (max-width: 1360px) {
+  /* Bilder entfernen*/
+  .hero img,
+  .divservice2 img {
+    display: none;
+  }
+
+  .hero {
+    background-image: url('../assets/svg/hero.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+  }
+  
+  .hero_left {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    padding: 1rem;
+  }
+
+  .service {
+    background-image: url('../assets/svg/services.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+  }
+
+  .divservice2 ul {
+    width: 100%;
+    padding-left: 8rem;
+    
+  }
+  
+  .divservice2 {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .divservice2 li {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  footer p, footer div {
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: static; /* Positionierung aufheben */
+    padding-left: 0;
+  }
+
+  footer div {
+    margin-top: 1rem; /* Abstand zwischen <p> und <div> */
+  }
+}
+
