@@ -8,45 +8,135 @@ header {
   height: 6rem;
   padding: 1rem;
   position: relative;
-  }
-  #logo{padding: 0; width: 3rem; height: 3rem;}
+}
+#logo {
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+}
 #menu {
-  padding: 0; margin; 0;
-  text-align: right; width: 3rem; height: 3rem;
-  }
-.header_left p {font-size:xx-large ; font-weight: 600;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  width: 3rem;
+  height: 3rem;
+}
+.header_left p {
+  font-size: xx-large;
+  font-weight: 600;
   vertical-align: top;
-  color:#68e1fd;
+  color: #68e1fd;
   display: inline-block;
   width: 60px;
   height: 3rem;
-  margin: 0; padding-top: 0.7rem;
+  margin: 0;
+  padding-top: 0.7rem;
 }
-.header_left {width: 60%;
+.header_left {
+  width: 60%;
   display: inline-block;
 }
-.header_right{display:inline-block; width:4rem; position: absolute; right: 3rem;}
-h1{color: #000F37}
-h2{color: #000F37}
-p{color: #4F4F4F}
+.header_right {
+  display: inline-block;
+  width: 4rem;
+  position: absolute;
+  right: 3rem;
+}
+h1 {
+  color: #000f37;
+}
+h2 {
+  color: #000f37;
+}
+p {
+  color: #4f4f4f;
+}
 
-.hero{width: 80%; height: 30rem; margin: auto;}
-.hero_left{width: 45%; height: 100%; vertical-align: top; margin-right: 1rem; padding: 2rem; padding-top: 4rem; display: inline-block}
-.hero_right{width: 40%; height: 100%; display: inline-block;  }
-button{background-color: #68e1fd;width: 140px; height: 50px; margin-top: 2rem;text-transform: uppercase; font-weight: bold;border-style: none;}
-.service{width: 100%; height: 40rem; background-color:#68e1fd; margin-top: 3rem;padding-top: 2rem;} 
-.service div{width: 50%; margin: auto; }
-.divservice1 {padding-bottom: 3rem;}
-.divservice1 h1, .divservice1 p{ text-align: center;}
-.divservice2 {background-color: white; height: 20rem;padding-top: 5rem; padding-bottom:1rem;} 
-.divservice2 ul {display: inline-block; vertical-align: top; width: 40%;padding-left: 8rem;}
-.divservice2 li{font-weight: bold; line-height:2rem; list-style-image: url(../assets/svg/check-mark.svg);}
-.divservice2 img{width: 35%;}
+.hero {
+  width: 80%;
+  height: 30rem;
+  margin: auto;
+}
+.hero_left {
+  width: 45%;
+  height: 100%;
+  vertical-align: top;
+  margin-right: 1rem;
+  padding: 2rem;
+  padding-top: 4rem;
+  display: inline-block;
+}
+.hero_right {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+}
+button {
+  background-color: #68e1fd;
+  width: 140px;
+  height: 50px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-style: none;
+}
+.service {
+  width: 100%;
+  height: 40rem;
+  background-color: #68e1fd;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+.service div {
+  width: 50%;
+  margin: auto;
+}
+.divservice1 {
+  padding-bottom: 3rem;
+}
+.divservice1 h1,
+.divservice1 p {
+  text-align: center;
+}
+.divservice2 {
+  background-color: white;
+  height: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+.divservice2 ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  padding-left: 8rem;
+}
+.divservice2 li {
+  font-weight: bold;
+  line-height: 2rem;
+  list-style-image: url(../assets/svg/check-mark.svg);
+}
+.divservice2 img {
+  width: 35%;
+}
 
-footer p{padding-left: 2rem; width: 50%; display: inline-block;}
-footer{position: relative;}
-footer div{width: 120px; position:absolute; right: 2rem; bottom:1rem; text-align: right;}
-i{padding-right: 1rem;}
+footer p {
+  padding-left: 2rem;
+  width: 50%;
+  display: inline-block;
+}
+footer {
+  position: relative;
+}
+footer div {
+  width: 120px;
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+  text-align: right;
+}
+i {
+  padding-right: 1rem;
+}
 
 @media (max-width: 1360px) {
   /* Bilder entfernen*/
@@ -56,13 +146,13 @@ i{padding-right: 1rem;}
   }
 
   .hero {
-    background-image: url('../assets/svg/hero.svg');
+    background-image: url("../assets/svg/hero.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 40rem;
   }
-  
+
   .hero_left {
     width: 100%;
     text-align: center;
@@ -71,7 +161,7 @@ i{padding-right: 1rem;}
   }
 
   .service {
-    background-image: url('../assets/svg/services.svg');
+    background-image: url("../assets/svg/services.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,19 +171,19 @@ i{padding-right: 1rem;}
   .divservice2 ul {
     width: 100%;
     padding-left: 8rem;
-    
   }
-  
+
   .divservice2 {
     background-color: rgba(255, 255, 255, 0.8);
   }
-  
+
   .divservice2 li {
     font-size: 1.2rem;
     text-align: left;
   }
 
-  footer p, footer div {
+  footer p,
+  footer div {
     width: 100%;
     text-align: center;
     display: block;
@@ -105,4 +195,3 @@ i{padding-right: 1rem;}
     margin-top: 1rem; /* Abstand zwischen <p> und <div> */
   }
 }
-
